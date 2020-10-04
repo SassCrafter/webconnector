@@ -1,0 +1,72 @@
+.form {
+  &-group {
+    margin: 0.5rem 0;
+
+    input:not([type="checkbox"]),
+    textarea,
+    select {
+      display: block;
+      width: 100%;
+      border: 1px solid #ccc;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+
+      &::placeholder {
+        text-transform: capitalize;
+      }
+    }
+
+    select {
+      option {
+        text-transform: capitalize;
+        color: #757575;
+      }
+    }
+  }
+  input[type="submit"] {
+    margin: 0.5rem 0;
+    font: inherit;
+  }
+
+  &-link {
+    display: inline-block;
+    text-transform: capitalize;
+    border-bottom: 1px solid transparent;
+    transition: border-color 500ms linear;
+
+    &:hover {
+      border-color: $primary-color;
+    }
+  }
+
+  span {
+    text-transform: capitalize;
+    margin-left: 1rem;
+  }
+
+  .social-input {
+    display: flex;
+
+    i {
+      font-size: 2rem;
+      padding: 0.5rem;
+      width: 4rem;
+    }
+
+    .fa-twitter {
+      color: #38a1f3;
+    }
+    .fa-facebook {
+      color: #3b5998;
+    }
+    .fa-youtube {
+      color: #c4302b;
+    }
+    .fa-linkedin {
+      color: #0077b5;
+    }
+    .fa-instagram {
+      color: #3f729b;
+    }
+  }
+}

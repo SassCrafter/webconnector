@@ -1,0 +1,164 @@
+@import "config";
+@import "utilities";
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid $primary-color;
+  opacity: 0.9;
+
+  .logo {
+    color: set_text_color($dark-color);
+  }
+
+  &-list {
+    display: flex;
+
+    &-link {
+      display: inline-block;
+      padding: 0.45rem;
+      margin: 0 0.25rem;
+      text-transform: capitalize;
+      color: set_text_color($dark-color);
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+/* Landing */
+.landing {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+
+  &-inner {
+    width: 100%;
+    height: 100%;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Profiles */
+.profiles {
+  &__container {
+    .profile {
+      width: 100%;
+      height: 100%;
+      background: $light-color;
+      border: 1px solid lighten($dark-color, 50%);
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 2fr 4fr 2fr;
+      align-items: center;
+
+      &__img {
+        display: block;
+        width: 200px;
+        height: auto;
+        margin-right: 1rem;
+      }
+      &__description--title {
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      &__skills {
+        i {
+          margin-right: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+/* Profile */
+@import "profile";
+
+/* Posts */
+.posts {
+  &__form {
+    &-header {
+      background: $primary-color;
+      padding: 0.5rem;
+
+      h3 {
+        color: #fff;
+      }
+    }
+  }
+
+  .post {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+
+    &-profile {
+      text-align: center;
+      &__img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    &-description {
+      &__bottom {
+        margin-top: 1rem;
+        button {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+// Media
+
+@import "media";

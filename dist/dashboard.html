@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Welcome to the Web Connector</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <h1>
+        <a href="index.html" class="logo">
+          <i class="fas fa-code"></i>
+          DevConnector
+        </a>
+      </h1>
+
+      <ul class="navbar-list">
+        <li>
+          <a href="profiles.html" class="navbar-list-link">
+            <i class="fas fa-user m-right"></i>developers</a
+          >
+        </li>
+        <li>
+          <a href="posts.html" class="navbar-list-link">posts</a>
+        </li>
+        <li>
+          <a href="login.html" class="navbar-list-link">
+            <i class="fas fa-sign-out-alt m-right"></i> logout</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Dashboar -->
+    <section class="dash py-2 m-top">
+      <div class="container">
+        <h2 class="large primary-text">dashboard</h2>
+        <p class="lead"><i class="fas fa-user"></i> Welcome John Doe</p>
+        <div class="dash-buttons">
+          <a href="create-profile.html" class="btn">
+            <i class="fas fa-user-circle primary-text m-right"></i>edit profile
+          </a>
+          <a href="add-experience.html" class="btn">
+            <i class="fab fa-black-tie primary-text m-right"></i>add experience
+          </a>
+          <a href="add-education.html" class="btn">
+            <i class="fas fa-graduation-cap primary-text m-right"></i>add
+            education
+          </a>
+        </div>
+
+        <!-- Experience -->
+        <h2 class="my-2">Experience Credentials</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>company</th>
+              <th class="hide-sm">title</th>
+              <th class="hide-sm">years</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>microsoft</td>
+              <td class="hide-sm">senior developer</td>
+              <td class="hide-sm">Oct 2011 - Current</td>
+              <td>
+                <button class="btn btn-danger">delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>sun microsystems</td>
+              <td class="hide-sm">senior developer</td>
+              <td class="hide-sm">Oct 2004 - Nov 2010</td>
+              <td>
+                <button class="btn btn-danger">delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Education -->
+        <h2 class="my-2">Education Credentials</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>school</th>
+              <th class="hide-sm">degree</th>
+              <th class="hide-sm">years</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>University of Washington</td>
+              <td class="hide-sm">Masters</td>
+              <td class="hide-sm">Sep 1993 - June 1999</td>
+              <td>
+                <button class="btn btn-danger">delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="#" class="btn btn-danger my-2">delete account</a>
+      </div>
+    </section>
+  </body>
+</html>
